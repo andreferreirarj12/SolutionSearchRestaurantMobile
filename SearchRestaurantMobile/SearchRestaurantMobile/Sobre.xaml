@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SearchRestaurantMobile.Sobre" BackgroundColor="Black">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="APLICATIVO VEGAN FOOD" FontSize="Large" TextColor="White" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
+                 RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}" />
+
+            <Label Text="VERSÃO 0.0.1" FontSize="Large" TextColor="White" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
+                 RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}" />
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

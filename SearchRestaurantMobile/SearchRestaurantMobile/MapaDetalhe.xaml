@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SearchRestaurantMobile"
+             x:Class="SearchRestaurantMobile.MapaDetalhe" BackgroundColor="Black">
+    
+    <ContentPage.Content>
+      
+        <StackLayout>
+            
+            <Label x:Name="lblUser" Text=""
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" TextColor="White" />
+
+            <ScrollView x:Name="ScrollViewPrinncipal">
+                <StackLayout Orientation="Vertical" x:Name="stackPrincipal">       
+                </StackLayout>                
+            </ScrollView>    
+            
+            <Button  Text="Favoritos" x:Name="btnFavoritos" Clicked="btnFavoritos_Clicked"  VerticalOptions="Center" HorizontalOptions="Center"  WidthRequest="200" BackgroundColor="Transparent" TextColor="White" BorderColor="White" BorderRadius="50" BorderWidth="1" FontSize="12"/>                        
+            
+        </StackLayout> 
+        
+    </ContentPage.Content>
+    
+</ContentPage>

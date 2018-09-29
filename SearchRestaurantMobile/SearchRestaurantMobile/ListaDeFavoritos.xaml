@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              xmlns:local="clr-namespace:SearchRestaurantMobile"
+             x:Class="SearchRestaurantMobile.ListaDeFavoritos" BackgroundColor="Black">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <StackLayout Orientation="Vertical">
+                <ListView x:Name="lstPrincipal" 
+                          ItemSelected="Handle_ItemSelected" 
+                          ItemTapped="Handle_ItemTapped">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout Orientation="Horizontal" Padding="5">
+                                    <Image Source="{Binding Imagem}" />
+                                    <StackLayout HorizontalOptions="StartAndExpand">
+                                        <Label Text="{Binding Nome}" TextColor="White"/>
+                                        <Label Text="{Binding Descricao}" TextColor="White"/>
+                                        <Label Text="{Binding Endereco}" TextColor="White"/>
+                                    </StackLayout>
+                                    <Button BackgroundColor="White" TextColor="Black" Text="Excluir" FontAttributes="Italic" />
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
